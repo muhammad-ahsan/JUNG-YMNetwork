@@ -1,0 +1,62 @@
+Dataset: ydata-yim-friends-graph-v1_0
+
+Yahoo! Instant Messenger friends connectivity graph, version 1.0
+
+=====================================================================
+
+Millions use Yahoo! Messenger every day to communicate by text or by
+voice between PCs or from PCs to phones. This dataset contains a
+non-random sample of the Yahoo! Messenger "friends graph" from 2003,
+where users are represented as meaningless anonymous numbers so that
+no identifying information is revealed. Users are nodes in the graph.
+An edge between two users indicates that at least one user is a
+contact of the other. (The direction of the contact relationship is
+ignored, producing an undirected graph.) The dataset consists only of
+the anonymous friends graph, and does not contain any information
+about users or discussions.
+
+The file is in Metis format. There is one header line in the format:
+N M
+indicating the total number of nodes N and the total number of edges M
+in the graph. Following the header line, there are N adjacency list
+lines, one for each node, in order, starting with node 1. The
+adjacency list line for each node lists the node's neighbors,
+separated by spaces. Each adjacency list includes the neighboring
+nodes only, and does not explicitly include the ID of the originating
+node -- the ID of the originating node is implicit according to the
+line number in the file. For more information on the Metis graph data
+format see the Metis manual, obtainable from the website of George
+Karypis here:
+http://glaros.dtc.umn.edu/gkhome/fetch/sw/metis/manual.pdf
+
+The data contains:
+
+1,878,736 nodes (representing anonymous users)
+4,079,161 edges (representing contacts between users)
+
+The Yahoo! Messenger friends graph is an example of a large real-world
+power-law graph. The dataset may serve as a testbed for matrix and
+graph algorithms including PCA and graph clustering algorithms, and
+machine learning algorithms. The graph's best quotient cuts show an
+interesting tradeoff between quotient cut score and balance, as
+discussed in the paper "Fixing two weaknesses of the spectral method",
+Kevin Lang, Neural Information Processing Systems, 2005.
+
+
+Beginning and end of the file:
+==============================
+
+1878736 4079161
+538644
+161879 364460 369851 693593 820930 1210175 1384985
+1104824
+369311 1016361
+1542017
+.
+.
+.
+159321 569847
+167197 282526 351890 456933 550522 560275 1264338 1389116 1432036 1470768 1595977 1683516 1831035
+11690 138507 308663 335448 383089 759197 796018 1097152 1112759 1184626 1248018 1281368 1329176 1430233 1446905 1530760 1662124 1698293 1844677
+1856354
+17159 888928
