@@ -29,8 +29,7 @@ public class YMNetwork {
         /*
          * In-Memory graph
          * Graph <V, E> where V = Vertex type and E = Edge type
-         * Input Data
-         * Inverted
+         * 
          */
 
         Graph<Integer, String> G = new SparseMultigraph<>();
